@@ -1,0 +1,86 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* background-color: #1B1464; */
+  background: url(images/fear.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+ font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: 'Creepster', cursive;
+}
+
+.name h1{
+  color: #ff3838;
+  position: fixed;
+  padding-left: 300px;
+  padding-top:120px;
+  font-size: 70px;
+  letter-spacing: 5px;
+  }
+
+.designedby p{
+  margin: 0 auto;
+  position: fixed;
+  color: #fff;
+  padding-left: 265px;
+  padding-top:250px;
+
+}
+
+.heart
+{
+  width: 100px;
+  height: 100px;
+  background-color: #ff3838;
+  transform: rotate(-45deg);
+  box-shadow: 10px -10px 80px #ff3838;
+  position: relative;
+  animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart{
+  0%{
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80%{
+    transform: rotate(-45deg) scale(1.0);
+  }
+  100%{
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+.heart::before
+{
+  width: 100px;
+  height: 100px;
+  background-color: #ff3838;
+  transform: rotate(-45deg);
+  box-shadow: -10px -10px 80px #ff3838;
+  top: -50%;
+  border-radius: 50px;
+  position: absolute;
+  content: '';
+
+}
+
+.heart::after
+{
+  width: 100px;
+  height: 100px;
+  background-color: #ff3838;
+  transform: rotate(-45deg);
+  box-shadow: 10px 10px 80px #ff3838;
+  right: -50%;
+  border-radius: 50px;
+  position: absolute;
+  content: '';
+}
